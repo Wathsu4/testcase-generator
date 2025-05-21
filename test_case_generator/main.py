@@ -75,9 +75,9 @@ async def startup_event():
     if BACKEND == "huggingface":
         load_model()
     elif BACKEND == "openai":
-        if not OPENAI_API_KEY: # Redundant if checked above, but good for safety
+        if not OPENAI_API_KEY: 
              raise RuntimeError("OPENAI_API_KEY not set in .env file for OpenAI backend")
-        # openai.api_key = OPENAI_API_KEY # This line is for older versions
+        
         if client is None: # Initialize if not already done
             client = openai.OpenAI(api_key=OPENAI_API_KEY)
         print("OpenAI backend confirmed for startup.")
@@ -96,7 +96,7 @@ async def generate_tests(input_data: InputData):
     elif BACKEND == "openai":
         try:
             # Initialize the OpenAI client
-            client = openai.OpenAI(api_key=OPENAI_API_KEY) # Make sure OPENAI_API_KEY is accessible here
+            client = openai.OpenAI(api_key=OPENAI_API_KEY) 
 
             response = client.chat.completions.create(
                 model="gpt-4o",
