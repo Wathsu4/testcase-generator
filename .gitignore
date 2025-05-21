@@ -1,0 +1,31 @@
+# Logs
+my-test-gen-frontend/logs
+my-test-gen-frontend/*.log
+my-test-gen-frontend/npm-debug.log*
+my-test-gen-frontend/yarn-debug.log*
+my-test-gen-frontend/yarn-error.log*
+my-test-gen-frontend/pnpm-debug.log*
+my-test-gen-frontend/lerna-debug.log*
+
+my-test-gen-frontend/node_modules
+my-test-gen-frontend/dist
+my-test-gen-frontend/dist-ssr
+my-test-gen-frontend/*.local
+
+# Editor directories and files
+my-test-gen-frontend/.vscode/*
+my-test-gen-frontend/.vscode/extensions.json
+my-test-gen-frontend/.idea
+my-test-gen-frontend/.DS_Store
+my-test-gen-frontend/*.suo
+my-test-gen-frontend/*.ntvs*
+my-test-gen-frontend/*.njsproj
+my-test-gen-frontend/*.sln
+my-test-gen-frontend/*.sw?
+
+# Ignore .env file
+.env
+
+# Ignore venv folder
+test_case_generator/venv/*
+test_case_generator/models/*
